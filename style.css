@@ -78,7 +78,7 @@
 
  @media screen and (max-width: 800px) {
      .hero-1 {
-        font-size: 2rem;
+         font-size: 2rem;
      }
  }
 
@@ -172,6 +172,16 @@
      border-radius: 4px;
  }
 
+ @media screen and (max-width: 800px) {
+     .btn-red {
+     background-color: red;
+     color: white;
+     padding: 5px 24px;
+     font-size: 15px;
+     border-radius: 4px;
+     }
+ }
+
  .hero-btn {
      display: flex;
      align-items: center;
@@ -186,6 +196,17 @@
      font-size: 20px;
      color: white;
      background-color: rgba(19, 13, 13, 0.747);
+ }
+
+ @media screen and (max-width: 800px) {
+     .main input {
+         border-radius: 2px;
+         border: 1px solid rgb(255, 255, 255);
+         padding: 11px 80px 11px 16px;
+         font-size: 10px;
+         color: white;
+         background-color: rgba(19, 13, 13, 0.747);
+     }
  }
 
  .img-container {
