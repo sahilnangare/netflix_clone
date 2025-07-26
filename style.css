@@ -14,13 +14,13 @@
      background-position: center center;
      background-size: max(1400px, 100vw);
      background-repeat: no-repeat;
-     height: 100vh;
+     height: 80vh;
      position: relative;
  }
 
  .main .box {
      background-color: rgb(0, 0, 0);
-     height: 100vh;
+     height: 80vh;
      width: 100%;
      opacity: 80%;
      position: absolute;
@@ -64,24 +64,50 @@
      font-family: "Martel Sans", sans-serif;
  }
 
- .hero> :nth-child(1) {
+ @media screen and (max-width: 800px) {
+     .hero {
+         gap: 13px;
+     }
+ }
+
+ .hero-1 {
      font-size: 3rem;
      font-weight: bolder;
      text-align: center;
  }
 
- .hero> :nth-child(2) {
+ @media screen and (max-width: 800px) {
+     .hero-1 {
+        font-size: 2rem;
+     }
+ }
+
+ .hero-2 {
      font-size: 1.2rem;
      font-weight: 800;
      text-align: center;
 
  }
 
- .hero> :nth-child(3) {
+
+ @media screen and (max-width: 800px) {
+     .hero-2 {
+         font-size: 0.8
+     }
+ }
+
+ .hero-3 {
      font-size: 1rem;
      font-weight: 600;
      text-align: center;
 
+ }
+
+
+ @media screen and (max-width: 800px) {
+     .hero-3 {
+         font-size: 0.6rem;
+     }
  }
 
  .sepration {
@@ -168,17 +194,18 @@
      justify-content: center;
      gap: 23px;
      padding: 25px;
+     flex-wrap: wrap;
 
  }
 
  .img-img {
      border-radius: 2px;
      border: 2px solid rgba(95, 89, 89, 0.836);
-     
+
  }
 
 
-  .reasons {
+ .reasons {
      color: white;
      background-color: black;
      font-size: 1.5rem;
@@ -188,75 +215,108 @@
      padding-left: 10.5%;
  }
 
- .main-card{
-    background-color: rgb(66, 58, 58);
-    height: 35vh;
-    width: 19.5%;
-    border: 2px solid rgb(49, 45, 45);
-    border-radius: 15px;
-    
+ .main-card {
+     background-color: rgb(66, 58, 58);
+     height: 210px;
+     width: 18.5%;
+     border: 2px solid rgb(49, 45, 45);
+     border-radius: 15px;
+
  }
 
- .cards{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 15px;
-    padding: 23px;
- }
- .title{
-    color: white;
-    font-family: 'poppins';
-    font-size:21px;
-    padding: 15px;
- }
-  .paragraph{
-    color: rgb(222, 215, 215);
-    font-family: 'poppins';
-    font-size:15px;
-    font-weight: 500;
-    padding: 0px 15px;
+ @media (max-width:800px) {
+     .main-card {
+         height: 369px;
+         width: 41.5%;
+     }
  }
 
-   .ques {
-     color: white;
-     background-color: black;
-     font-size: 1.5rem;
-     font-weight: 500;
-     font-family: 'poppins';
-     padding-top: 2%;
-     padding-left: 10.5%;
+ .title {
+     text-align: center;
+     text-wrap: wrap;
  }
 
- .ques-card{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 15px;
-    gap: 15px;
+ .paragraph {
+     text-align: center;
+     font-size: 20px;
  }
 
-  .ques-cards{
-    background-color: rgba(101, 104, 104, 0.522);
-    height: 5vh;
-    color: white;
-    width: 77.5%;
-    font-family: 'poppins';
-    font-size: 22px;
-    padding: 15px 22px;
-    gap: 15px;
- }
-
-
-  .hero-btn {
+ .cards {
+     padding: 25px;
+     width: 100vw;
+     gap: 20px;
      display: flex;
+     align-items: center;
+     flex-direction: row;
+     justify-content: center;
+
+ }
+
+ @media (max-width:800px) {
+     .cards {
+         flex-direction: column;
+     }
+ }
+
+ .title {
+     color: rgb(255, 255, 255);
+     font-family: 'poppins';
+     font-size: 21px;
+     padding: 15px;
+     text-wrap: wrap;
+ }
+
+ .paragraph {
+     color: rgb(222, 215, 215);
+     font-family: 'poppins';
+     font-size: 15px;
+     font-weight: 500;
+     padding: 0px 15px;
+     text-overflow: hiss;
+     text-wrap: wrap;
+ }
+
+ .ques {
+     color: white;
+     background-color: black;
+     font-size: 1.5rem;
+     font-weight: 500;
+     font-family: 'poppins';
+     padding-top: 2%;
+     padding-left: 10.5%;
+ }
+
+ .ques-card {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     padding: 15px;
+     gap: 15px;
+ }
+
+ .ques-cards {
+     background-color: rgba(101, 104, 104, 0.522);
+     height: 5vh;
+     color: white;
+     width: 77.5%;
+     font-family: 'poppins';
+     font-size: 22px;
+     padding: 15px 22px;
+     gap: 15px;
+ }
+
+
+ .hero-btn {
+     display: flex;
+     flex-wrap: wrap;
+
      align-items: center;
      justify-content: center;
      gap: 8px;
  }
-  .main-input-low {
+
+ .main-input-low {
      border-radius: 2px;
      border: 1px solid rgb(255, 255, 255);
      padding: 13px 80px 11px 16px;
@@ -265,13 +325,14 @@
      background-color: rgba(19, 13, 13, 0.747);
  }
 
-  .btns {
+ .btns {
      margin: 2px;
      font-weight: bold;
      background-color: rgba(255, 255, 255, 0);
      border-radius: 20px white;
      color: white;
  }
+
  .btn-red-btm-low {
      background-color: rgb(243, 16, 16);
      color: white;
@@ -281,30 +342,30 @@
      border-radius: 4px;
  }
 
- .lower{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
+ .lower {
+     display: flex;
+     flex-direction: row;
+     align-items: center;
+     justify-content: center;
+     flex-wrap: wrap;
  }
 
- .last-line{ 
-    display:flex ;  
-    flex-direction: column;
-    font-size: 15px;
-    color: rgb(255, 255, 255);
-    text-align: center;
-    font-family: 'poppins';
-    padding-top: 5vh;
-    padding-bottom: 1.5vh;
+ .last-line {
+     display: flex;
+     flex-direction: column;
+     font-size: 15px;
+     color: rgb(255, 255, 255);
+     text-align: center;
+     font-family: 'poppins';
+     padding-top: 5vh;
+     padding-bottom: 1.5vh;
  }
 
- .footer{
-
-    height: 20vh;
+ .footer {
+     height: 20vh;
  }
 
- .helpline{
+ .helpline {
      color: rgb(133, 127, 127);
      background-color: black;
      font-size: 1rem;
@@ -314,54 +375,59 @@
      padding-left: 10.5%;
  }
 
- .uls{
-    display: flex;
-    height: 20vh;
-    width: 79%;
-    color: white;
-    align-items: center;
-    justify-content: center;
-    gap: 9%;
-    font-family: 'poppins';
-    font-weight: 150;
-    font-size: 15px;
-    list-style: none;
-    padding: 10px;
+ .uls {
+     display: flex;
+     height: 20vh;
+     width: 79%;
+     color: white;
+     align-items: center;
+     justify-content: center;
+     gap: 9%;
+     font-family: 'poppins';
+     font-weight: 150;
+     font-size: 15px;
+     list-style: none;
+     padding: 10px;
 
  }
 
- .f-line{
-    display: flex;
-    flex-direction: column;
-    gap: 7px;
-    list-style: none;
-    padding: 10px;
+ .f-line {
+     display: flex;
+     flex-direction: column;
+     gap: 7px;
+     list-style: none;
+     padding: 10px;
  }
-  .s-line{
-    display: flex;
-    flex-direction: column;
-    gap: 7px;
-    list-style: none;
-    padding: 10px;
+
+ .s-line {
+     display: flex;
+     flex-direction: column;
+     gap: 7px;
+     list-style: none;
+     padding: 10px;
  }
-  .t-line{
-    display: flex;
-    flex-direction: column;
-    gap: 7px;
-    list-style: none;
-    padding: 10px;
+
+ .t-line {
+     display: flex;
+     flex-direction: column;
+     gap: 7px;
+     list-style: none;
+     padding: 10px;
  }
-  .f4-line{
-    display: flex;
-    flex-direction: column;
-    gap: 7px;
-    list-style: none;
-    padding: 10px;
+
+ .f4-line {
+     display: flex;
+     flex-direction: column;
+     gap: 7px;
+     list-style: none;
+     padding: 10px;
  }
- .low-btn{
-    padding-left: 10%;
-    padding-top: 20px;
+
+ .low-btn {
+     padding-left: 10%;
+     padding-top: 20px;
  }
+
  .btn-eng-low {
      padding: 3px 25px;
      margin: 3px;
@@ -373,7 +439,7 @@
      font-weight: 200;
  }
 
-  .netflix{
+ .netflix {
      color: rgb(133, 127, 127);
      background-color: black;
      height: 20vh;
